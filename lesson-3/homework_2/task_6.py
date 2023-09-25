@@ -1,16 +1,18 @@
-m = str(input('Please, type the month: '))
-m = m.lower()
-d = int(input('Please, type the day: '))
-list_m = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november','december']
-if m in list_m and d in range(1, 32):
-    print('True')
-print('False')
+# Пользователь вводит месяц и число. Выведите True, если такой день есть в году.
 
-# тут же можно не заморачиваться с тем, что в некоторых месяцах нет определенных чисел? :)
-# вот второй вариант решения, если вводить номер месяца:
-
-m = int(input('Please, type the month (from 1 to 12): '))
+dict_a = {'january': 31,
+          'february': 28,
+          'march': 31,
+          'april': 30,
+          'may': 31,
+          'june': 30,
+          'july': 31,
+          'august': 31,
+          'september': 30,
+          'october': 31,
+          'november': 30,
+          'december': 31}
+m = str.lower(input('Please, type the month: '))
 d = int(input('Please, type the day: '))
-if m in range(1, 13) and d in range(1, 32):
-    print('True')
-print('False')
+print(d <= dict_a[m])
+
