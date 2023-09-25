@@ -7,5 +7,5 @@ def is_year_leap(year: int):
         return 'False'
 
 
-leap = is_year_leap(2000)
-assert leap == 'True'
+assert is_year_leap(2024) == 'True'
+assert is_year_leap(2023) == 'False'

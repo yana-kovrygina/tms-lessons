@@ -15,11 +15,11 @@ def get_longest_word(s: str):
 result = get_longest_word('get the longest word')
 assert result == 'longest'
 
-# result = get_longest_word('getthelongestword')
-# assert result == 'getthelongestword'
+result = get_longest_word('getthelongestword')
+assert result == 'getthelongestword'
 
-# result = get_longest_word('один два три четыре')
-# assert result == 'Please, enter the valid string'
+result = get_longest_word('один два три четыре')
+assert result == 'Please, enter the valid string'
 
-# result = get_longest_word('1234567890.^$*+?{}[]\|()')
-# assert result == 'Please, enter the valid string'
+result = get_longest_word('1234567890.^$*+?{}[]\|()')
+assert result == 'Please, enter the valid string'

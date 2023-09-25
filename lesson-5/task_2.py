@@ -4,8 +4,8 @@ def generate_natural_cubes(n: int):
     return [i ** 3 for i in range(1, n+1)]
 
 
-cubes = generate_natural_cubes(5)
-print(cubes)
-# это на всякий случай для удобства проверки)
+cubes = generate_natural_cubes(10)
 
-assert cubes == [1, 8, 27, 64, 125]
+assert generate_natural_cubes(1) == [1]
+assert generate_natural_cubes(5) == [1, 8, 27, 64, 125]
+assert generate_natural_cubes(10) == [1, 8, 27, 64, 125, 216, 343, 512, 729, 1000]
