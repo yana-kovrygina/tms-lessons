@@ -6,10 +6,12 @@
 
 for i in range(0, 101):
     print(i)
-    n = input('Should we break? ')
+    while True:
+        n = input('Should we break? ')
+            if n not in ('yes', 'no'):
+                print("Don't understand you")
+        else
+            break
     if n == 'yes':
         break
-    if n == 'no':
-        continue
-    else:
-        print("Don't understand you")
+        
