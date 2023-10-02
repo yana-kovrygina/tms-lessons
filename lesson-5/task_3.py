@@ -1,7 +1,7 @@
 # Напишите функцию generate_squares, которая принимает произвольное количество аргументов и возвращает список, состоящий
 # из их квадратов.
 
-def generate_squares(*args) -> list:
+def generate_squares(*args) -> list[int]:
     return [value ** 2 for value in args]
 
 
